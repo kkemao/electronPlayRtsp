@@ -1,5 +1,5 @@
 # electronPlayRtsp
-# 云天励飞自研WEB RTSP播放器
+# WEB RTSP播放器
 
 **支持rtsp协议，支持h264，h265编码，最多支持并发4路，自测800万像素的播放没有问题.**
 
