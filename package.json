@@ -1,0 +1,45 @@
+{
+  "name": "intellif-video",
+  "productName": "intellif-video",
+  "version": "1.0.1",
+  "description": "云天励飞RTSP播放器",
+  "main": "main.js",
+  "scripts": {
+    "start": "set NODE_ENV=develop && nodemon --watch main.js --exec electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "intellif.com",
+    "copyright": "intellif.com",
+    "productName": "intellifvideo",
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis"
+        }
+      ],
+      "icon": "if256.png"
+    }
+  },
+  "keywords": [],
+  "author": "zengkefan",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^17.2.0"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "axios": "^0.27.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "winreg": "^1.2.4",
+    "ws": "^8.5.0"
+  }
+}
